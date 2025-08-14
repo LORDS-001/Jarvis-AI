@@ -110,35 +110,35 @@ Path can be customized in .env.
 ## **Step 9: Troubleshooting**
 -Screenshot Issues (PyAutoGUI / Pillow)
 
-If you see an error like:
+   If you see an error like:
 
-PyAutoGUI was unable to import pyscreeze...
-
-
-PyAutoGUI depends on Pillow, which may not fully support Python 3.13.
-
-Fix options:
-
-pip uninstall pillow
-pip install --upgrade pillow
-pip install --pre --upgrade pillow  # if using Python 3.13+
+   PyAutoGUI was unable to import pyscreeze...
 
 
-Or downgrade Python to 3.11 or 3.10 for full compatibility.
+   PyAutoGUI depends on Pillow, which may not fully support Python 3.13.
+
+   Fix options:
+
+   pip uninstall pillow
+   pip install --upgrade pillow
+   pip install --pre --upgrade pillow  # if using Python 3.13+
+
+
+   Or downgrade Python to 3.11 or 3.10 for full compatibility.
 
 -Email Sending Issues
 
-Ensure .env has correct email and App Password.
+   Ensure .env has correct email and App Password.
 
-Gmail/Outlook requires 2FA + App Password.
+   Gmail/Outlook requires 2FA + App Password.
 
-General Tips
+   General Tips
 
-Always activate your .venv before running the server.
+   Always activate your .venv before running the server.
 
-Use /docs to interact visually.
+   Use /docs to interact visually.
 
-Check data/ folder permissions for saving files.
+   Check data/ folder permissions for saving files.
 
 ---
 
