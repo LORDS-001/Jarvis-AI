@@ -9,10 +9,14 @@ A Python FastAPI backend for **LORDS AI**, providing endpoints for time, date, e
 git clone https://github.com/yourusername/LORDS-AI.git
 cd LORDS-AI```
 
+---
+
 ## **Step 2: Create a Virtual Environment**
 ```bash
 python -m venv .venv```
 Creates an isolated environment to manage dependencies.
+
+---
 
 ## **Step 3: Activate the Virtual Environment**
 
@@ -30,11 +34,15 @@ macOS / Linux:
 
 source .venv/bin/activate
 
+---
+
 ## **Step 4: Install Dependencies**
 ```bash
 pip install -r requirements.txt```
 
 Installs FastAPI, uvicorn, PyAutoGUI, pyttsx3, pyjokes, psutil, wikipedia, python-dotenv, and other required packages.
+
+---
 
 ## **Step 5: Set Up Environment Variables**
 
@@ -49,6 +57,8 @@ DATA_DIR=./data
 
 ### **Note: For Gmail or Outlook, you need an App Password (requires 2FA).**
 
+---
+
 ## **Step 6: Run the FastAPI Server**
 ```bash
 uvicorn app.main:app --reload```
@@ -58,6 +68,8 @@ Server starts on http://127.0.0.1:8000
 
 Open http://127.0.0.1:8000/docs to see the interactive API docs (Swagger UI)
 
+---
+
 ## **Step 7: Testing Endpoints**
 Example using curl:
 
@@ -65,7 +77,6 @@ Get Time
 
 ```bash
 curl http://127.0.0.1:8000/time```
-
 
 Take Screenshot
 
@@ -80,13 +91,14 @@ curl -X POST http://127.0.0.1:8000/email \
 -H "Content-Type: application/json" \
 -d '{"to":"example@gmail.com","subject":"Hello","content":"This is a test"}'```
 
-
 Remember a Note
 
 ```bash
 curl -X POST http://127.0.0.1:8000/remember \
 -H "Content-Type: application/json" \
 -d '{"note":"Buy milk tomorrow"}'```
+
+---
 
 ## **Step 8: File Storage**
 
@@ -96,8 +108,9 @@ data/
    remember.txt
    screenshot_YYYYMMDD_HHMMSS.png
 
-
 Path can be customized in .env.
+
+---
 
 ## **Step 9: Troubleshooting**
 -Screenshot Issues (PyAutoGUI / Pillow)
@@ -132,6 +145,8 @@ Always activate your .venv before running the server.
 Use /docs to interact visually.
 
 Check data/ folder permissions for saving files.
+
+---
 
 ## **Step 10: Endpoint Diagram**
 +----------------+           +----------------------+
