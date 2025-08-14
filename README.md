@@ -7,11 +7,11 @@ A Python FastAPI backend for **LORDS AI**, providing endpoints for time, date, e
 ## **Step 1: Clone the Repository**
 ```bash
 git clone https://github.com/yourusername/LORDS-AI.git
-cd LORDS-AI
+cd LORDS-AI```
 
 ## **Step 2: Create a Virtual Environment**
 ```bash
-python -m venv .venv
+python -m venv .venv```
 Creates an isolated environment to manage dependencies.
 
 ## **Step 3: Activate the Virtual Environment**
@@ -32,8 +32,7 @@ source .venv/bin/activate
 
 ## **Step 4: Install Dependencies**
 ```bash
-pip install -r requirements.txt
-
+pip install -r requirements.txt```
 
 Installs FastAPI, uvicorn, PyAutoGUI, pyttsx3, pyjokes, psutil, wikipedia, python-dotenv, and other required packages.
 
@@ -52,7 +51,7 @@ DATA_DIR=./data
 
 ## **Step 6: Run the FastAPI Server**
 ```bash
-uvicorn app.main:app --reload
+uvicorn app.main:app --reload```
 
 
 Server starts on http://127.0.0.1:8000
@@ -65,13 +64,13 @@ Example using curl:
 Get Time
 
 ```bash
-curl http://127.0.0.1:8000/time
+curl http://127.0.0.1:8000/time```
 
 
 Take Screenshot
 
 ```bash
-curl -X POST http://127.0.0.1:8000/screenshot
+curl -X POST http://127.0.0.1:8000/screenshot```
 
 
 Send Email
@@ -79,7 +78,7 @@ Send Email
 ```bash
 curl -X POST http://127.0.0.1:8000/email \
 -H "Content-Type: application/json" \
--d '{"to":"example@gmail.com","subject":"Hello","content":"This is a test"}'
+-d '{"to":"example@gmail.com","subject":"Hello","content":"This is a test"}'```
 
 
 Remember a Note
@@ -87,7 +86,7 @@ Remember a Note
 ```bash
 curl -X POST http://127.0.0.1:8000/remember \
 -H "Content-Type: application/json" \
--d '{"note":"Buy milk tomorrow"}'
+-d '{"note":"Buy milk tomorrow"}'```
 
 ## **Step 8: File Storage**
 
@@ -112,9 +111,10 @@ PyAutoGUI depends on Pillow, which may not fully support Python 3.13.
 
 Fix options:
 
+```bash
 pip uninstall pillow
 pip install --upgrade pillow
-pip install --pre --upgrade pillow  # if using Python 3.13+
+pip install --pre --upgrade pillow  # if using Python 3.13+```
 
 
 Or downgrade Python to 3.11 or 3.10 for full compatibility.
