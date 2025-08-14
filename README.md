@@ -4,14 +4,14 @@ A Python FastAPI backend for **LORDS AI**, providing endpoints for time, date, e
 
 ---
 
-## **Step 1: Clone the Repository**
+## Step 1: Clone the Repository
 ```bash
 git clone https://github.com/yourusername/LORDS-AI.git
 cd LORDS-AI```
 
 ---
 
-## **Step 2: Create a Virtual Environment**
+## Step 2: Create a Virtual Environment
 ```bash
 python -m venv .venv```
 Creates an isolated environment to manage dependencies.
